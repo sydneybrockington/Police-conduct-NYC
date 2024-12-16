@@ -1,0 +1,99 @@
+/* If using for Munno's 221, you must alter at least three style parameters and make sure that every bit of display text in the html document is authentic to your story. */
+
+
+/* selector {
+    property1: value1
+    property2: value2
+
+    } */
+
+/* for the first series of styles definitions, the selector - body, header, etc. - are predefined tags in htlm so we can reference elements directly. */
+
+/* Base styles for the entire document */
+body {
+    font-family: Georgia, serif; /* Set the default font family */
+    margin: 20px; /* Add margin around the body */
+    padding: 20px; /* Add padding inside the body */
+    background-color: #f7edff; /* Set the background color to a light gray */
+    color: #080707; /* Set the default text color */
+}
+
+/* Styles for the header */
+header {
+    background-color: #e2c2ff; /* Syracuse University orange for the background */
+    color: #ffff; /* Set the text color to white */
+    padding: 20px 0; /* Add vertical padding but no horizontal padding */
+    text-align: center; /* Center-align the text */
+    font-size: 44px;
+    border-bottom: 2px solid #6e06c3; /* Add a dark border at the bottom */
+}
+
+/* Styles for the footer */
+footer {
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add margin at the top */
+    padding: 10px 0; /* Add padding above and below the text */
+    background-color: #dbb3fc; /* Syracuse University orange for the background */
+    color: #fff; /* Set the text color to white */
+}
+
+/* Styles for the main article content */
+article {
+    max-width: 800px; /* Limit the width of the content to 800px */
+    margin: 20px auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding inside the article */
+    border-left: 1px solid #ccc; /* Add a light border on the left side */
+    border-right: 1px solid #ccc; /* Add a light border on the right side */
+}
+
+
+/* Styles for headings */
+h1 {
+    font-size: 32px; /* font size */
+    margin-top: 0; /* Remove the default margin at the top */
+}
+
+/* Styles for paragraphs */
+p {
+    line-height: 1.6; /* Set the line height to improve readability */
+    margin-bottom: 20px; /* Add margin at the bottom of paragraphs */
+    font-size: 16px; 
+}
+
+.caption {
+    font-size: 0.8em; /* Adjust the font size of the caption */
+    font-style: italic; /* Italicize the caption text */
+}
+
+.photo-credit {
+    font-weight: bold; /* Make the photo credit text bold */
+}
+
+/* Styles for images */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make images block-level elements */
+    margin: 0 auto 20px; /* Center images horizontally and add margin at the bottom */
+}
+
+/* dek and byline are not pre-defined in HTML, so we have to give them a class in the html document. Then to select them in CSS, it's .dek and .byline (.selector) */
+.dek {
+    font-style: italic; /* Set the font style to italic */
+    font-size: 16px; 
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+.byline {
+    font-weight: bold; /* Make the text bold */
+}
+
+
+/* @media apply styles based on the "viewport" - or screen size - of the device */
+@media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    article {
+        padding: 10px;
+    }
+
+
